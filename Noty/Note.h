@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  Note.h
 //  Noty
 //
 //  Created by Guanqing Yan on 3/17/15.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Note.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface Note : UIDocument
+@property (strong) NSString* noteContent;
 @end
-

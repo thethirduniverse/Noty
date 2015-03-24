@@ -14,6 +14,10 @@
 		4C48BCF51AB8CDC200B88369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C48BCF41AB8CDC200B88369 /* Images.xcassets */; };
 		4C48BCF81AB8CDC300B88369 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C48BCF61AB8CDC300B88369 /* LaunchScreen.xib */; };
 		4C48BD041AB8CDC300B88369 /* NotyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C48BD031AB8CDC300B88369 /* NotyTests.m */; };
+		4C48BD101AB8D05A00B88369 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C48BD0F1AB8D05A00B88369 /* Note.m */; };
+		4C541A891ABA85770021B50C /* GYActionCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C541A881ABA85770021B50C /* GYActionCounter.m */; };
+		4C541A8F1ABAC2AC0021B50C /* ConflictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C541A8E1ABAC2AC0021B50C /* ConflictViewController.m */; };
+		4CB086AD1AB8E47C00E6B24D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB086AC1AB8E47C00E6B24D /* ListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,15 @@
 		4C48BCFD1AB8CDC300B88369 /* NotyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C48BD021AB8CDC300B88369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C48BD031AB8CDC300B88369 /* NotyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotyTests.m; sourceTree = "<group>"; };
+		4C48BD0E1AB8D05900B88369 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		4C48BD0F1AB8D05A00B88369 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		4C541A841AB915F90021B50C /* Noty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Noty.entitlements; sourceTree = "<group>"; };
+		4C541A871ABA85770021B50C /* GYActionCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYActionCounter.h; sourceTree = "<group>"; };
+		4C541A881ABA85770021B50C /* GYActionCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYActionCounter.m; sourceTree = "<group>"; };
+		4C541A8D1ABAC2AC0021B50C /* ConflictViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConflictViewController.h; sourceTree = "<group>"; };
+		4C541A8E1ABAC2AC0021B50C /* ConflictViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConflictViewController.m; sourceTree = "<group>"; };
+		4CB086AB1AB8E47C00E6B24D /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		4CB086AC1AB8E47C00E6B24D /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +94,20 @@
 		4C48BCE61AB8CDC200B88369 /* Noty */ = {
 			isa = PBXGroup;
 			children = (
+				4C541A841AB915F90021B50C /* Noty.entitlements */,
 				4C48BCEB1AB8CDC200B88369 /* AppDelegate.h */,
 				4C48BCEC1AB8CDC200B88369 /* AppDelegate.m */,
+				4C48BD0E1AB8D05900B88369 /* Note.h */,
+				4C48BD0F1AB8D05A00B88369 /* Note.m */,
 				4C48BCEE1AB8CDC200B88369 /* ViewController.h */,
 				4C48BCEF1AB8CDC200B88369 /* ViewController.m */,
 				4C48BCF11AB8CDC200B88369 /* Main.storyboard */,
+				4C541A8D1ABAC2AC0021B50C /* ConflictViewController.h */,
+				4C541A8E1ABAC2AC0021B50C /* ConflictViewController.m */,
+				4CB086AB1AB8E47C00E6B24D /* ListViewController.h */,
+				4CB086AC1AB8E47C00E6B24D /* ListViewController.m */,
+				4C541A871ABA85770021B50C /* GYActionCounter.h */,
+				4C541A881ABA85770021B50C /* GYActionCounter.m */,
 				4C48BCF41AB8CDC200B88369 /* Images.xcassets */,
 				4C48BCF61AB8CDC300B88369 /* LaunchScreen.xib */,
 				4C48BCE71AB8CDC200B88369 /* Supporting Files */,
@@ -168,6 +190,12 @@
 				TargetAttributes = {
 					4C48BCE31AB8CDC100B88369 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9H8793KMK2;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					4C48BCFC1AB8CDC300B88369 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -219,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C541A891ABA85770021B50C /* GYActionCounter.m in Sources */,
+				4CB086AD1AB8E47C00E6B24D /* ListViewController.m in Sources */,
 				4C48BCF01AB8CDC200B88369 /* ViewController.m in Sources */,
 				4C48BCED1AB8CDC200B88369 /* AppDelegate.m in Sources */,
 				4C48BCEA1AB8CDC200B88369 /* main.m in Sources */,
+				4C541A8F1ABAC2AC0021B50C /* ConflictViewController.m in Sources */,
+				4C48BD101AB8D05A00B88369 /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,9 +377,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Noty/Noty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Noty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b0a7ca3d-efe8-439c-8dff-d01aad7e755b";
 			};
 			name = Debug;
 		};
@@ -355,9 +393,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Noty/Noty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Noty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b0a7ca3d-efe8-439c-8dff-d01aad7e755b";
 			};
 			name = Release;
 		};
@@ -414,6 +457,7 @@
 				4C48BD091AB8CDC300B88369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C48BD0A1AB8CDC300B88369 /* Build configuration list for PBXNativeTarget "NotyTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +466,7 @@
 				4C48BD0C1AB8CDC300B88369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
